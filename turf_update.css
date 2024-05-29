@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+.update-turf-form-container {
+    width: 400px; /* Adjusted width for better form display */
+    margin: 50px auto; /* Center the form with less margin */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    padding: 12px; /* Slightly larger padding for better touch target */
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    border: 1px solid #ccc; /* Lighter border color */
+    border-radius: 5px;
+    background-color: #fafafa; /* Slightly off-white background */
+}
+
+button {
+    padding: 12px 0; /* Larger padding for a taller button */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    font-weight: bold; /* Make the button text stand out */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Additional styles for select element */
+select {
+    cursor: pointer; /* Indicate that select is clickable */
+}
+
+/* Style for displaying success/error messages */
+.message {
+    text-align: center;
+    margin-bottom: 15px;
+}

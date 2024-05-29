@@ -1,0 +1,84 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 60px; /* Adjust based on navbar height */
+    padding-bottom: 100px; /* Adjust based on footer height */
+}
+
+nav {
+    background-color: #007bff;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav ul.nav-links li {
+    padding: 0 15px;
+}
+
+nav ul.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul.nav-links li a:hover {
+    color: #d4d4d4;
+}
+
+.main-content {
+    padding: 20px;
+    min-height: calc(100vh - 160px); 
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.section h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure footer is above other content */
+}
